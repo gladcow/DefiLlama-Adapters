@@ -6,7 +6,7 @@ const { getEnv } = require('../env')
 const { transformDexBalances } = require('../portedTokens')
 const { sliceIntoChunks, getUniqueAddresses } = require('../utils')
 
-const endpoint = () => getEnv('IOTAEVM_RPC')
+const endpoint = () => getEnv('IOTA_RPC')
 
 async function getObject(objectId) {
   return (await call('iota_getObject', [objectId, {

@@ -1,4 +1,4 @@
-const iota = require('../helper/chain/iotaevm')
+const iota = require('../helper/chain/iota')
 
 async function tvl() {
     const pool = await iota.getObject('0x8c25ec843c12fbfddc7e25d66869f8639e20021758cac1a3db0f6de3c9fda2ed');
@@ -10,7 +10,7 @@ async function tvl() {
 
 module.exports = {
     methodology: "Calculates the amount of IOTA staked in stIota liquid staking contracts.",
-    iotaevm: {
+    iota: {
         tvl,
     }
 }

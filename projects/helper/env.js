@@ -29,7 +29,7 @@ const DEFAULTS = {
   BERACHAIN_ARCHIVAL_RPC: "https://bera.blockscout.com/api/eth-rpc",
   PLUME_RPC: "https://rpc.plume.org",
   NIBIRU_RPC: "https://evm-rpc.nibiru.fi",
-  IOTAEVM_RPC: "https://api.mainnet.iota.cafe",
+  IOTA_RPC: "https://api.mainnet.iota.cafe",
 }
 
 const ENV_KEYS = [
