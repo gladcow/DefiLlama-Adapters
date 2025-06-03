@@ -1,8 +1,8 @@
 const iota = require('../helper/chain/iota')
 
 async function tvl() {
-    const pool = await iota.getObject('0x8c25ec843c12fbfddc7e25d66869f8639e20021758cac1a3db0f6de3c9fda2ed');
-    const iotaAmount = pool.fields.total_supply.fields.value / 10 ** 9;
+    const nativePool = await iota.getObject('0x02d641d7b021b1cd7a2c361ac35b415ae8263be0641f9475ec32af4b9d8a8056');
+    const iotaAmount = BigInt(nativePool.fields.total_staked) / BigInt(10 ** 9);
     return {
         iota: iotaAmount,
     }
